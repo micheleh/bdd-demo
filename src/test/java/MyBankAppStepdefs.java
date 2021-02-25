@@ -55,4 +55,17 @@ public class MyBankAppStepdefs {
     @Then("the latest transactions are printed")
     public void theLatestTransactionsArePrinted() {
     }
+
+    @Given("the customer is trusted")
+    public void theCustomerIsTrusted() {
+    }
+
+    @When("the customer requests a loan")
+    public void theCustomerRequestsALoan() {
+    }
+
+    @Then("the interest is {double} percent")
+    public void theInterestIsPercent(double arg0) {
+        Assert.assertEquals(account.calcInterest(1000000), arg0, 0);
+    }
 }

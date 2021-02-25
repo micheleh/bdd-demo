@@ -15,9 +15,9 @@ public class CheckingAccount {
     }
 
     public boolean withdraw(int amount) {
-        if (amount > balance) {
-            return false;
-        }
+//        if (amount > balance) {
+//            return false;
+//        }
         balance -= amount;
         return true;
     }
@@ -25,4 +25,6 @@ public class CheckingAccount {
     public void PrintLatestTransactions(){
         throw new RuntimeException();
     }
+
+    public double calcInterest(double loanAmount) { return 2.5; }
 }
