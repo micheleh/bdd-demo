@@ -14,14 +14,14 @@ Feature: Checking Account
       | 100        | 100              | 0          |
       | 50         | 100              | 50         |
 
-    Scenario: Print Latest Transactions
-      Given bank account exist
-      When choosing to print the latest transactions
-      Then the latest transactions are printed
+  Scenario: Print Latest Transactions
+    Given bank account exist
+    When choosing to print the latest transactions
+    Then the latest transactions are printed
 
-    @exclude
-    Scenario: Calculate Interest
-      Given bank account exist
-      And the customer is trusted
-      When the customer requests a loan
-      Then the interest is 2.5 percent
+  @exclude
+  Scenario: Calculate Interest
+    Given bank account exist
+    And the customer is trusted
+    When the customer requests a loan
+    Then the interest is 2.5 percent
